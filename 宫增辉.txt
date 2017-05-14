@@ -1,0 +1,34 @@
+dome1：
+eventsEmiteert emit 是可以监听事件
+就当这个事件触发的时候让他去执行zero 事件
+zero里面还有一个事件触发，来执行所触发的
+那个事件以此类推执行剩下的事件
+同步进入执行站，异步进入任务列队，当同步执行的时候
+异步在进入执行站，当异步执行完成后。同步在进入执行站，
+以此循环
+dome2
+因为setTimeout是异步，等主程序运行完，然后在调用那个参数
+dome3
+因为setTimeout是异步，等主程序运行完，然后在调用那个参数
+dome4
+只知道SETIMEOUT在所有代码中没有setimeout的才会执行里面的
+，才开始执行延时器的，但是网上还有说node版本不一样执行的结果也不一样，这个就不知道为啥了
+
+
+
+
+1. GET–从服务器获取数据 
+2. POST–将数据发送给服务器 
+
+http.createServer(function (request,response) {
+
+ 
+    response.writeHead(200,{'Content-Type':'text/html:charset=utf-8'});
+
+ response.end('1');
+}).listen(3000);
+
+创建项目，然后引入模块，在最后加入端口号，
+
+
+然后在浏览器输入127.0.0.1：端口号
